@@ -29,7 +29,14 @@
 		ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
 		dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
 		aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-		qui ratione voluptatem sequi nesciunt. </main>
+		qui ratione voluptatem sequi nesciunt.
+				<a name="picture" href="Servlet?command=showPicture">Please, show my team</a>
+			<c:when test="${foto == true}">
+				<p>This is my team</p>
+					<img src ="images/belgischHockeyTeam.jpg">
+				<a href="Servlet?command=showPicture">In future, don't show my picture anymore</a>
+			</c:when>
+		</main>
 		<footer> &copy; Webontwikkeling 3, UC Leuven-Limburg </footer>
 	</div>
 </body>
