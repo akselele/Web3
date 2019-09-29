@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" %>
+         pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
 <html>
@@ -19,7 +19,6 @@
                 <li><a href="Servlet">Home</a></li>
                 <li id="actual"><a href="Servlet?command=overview">Overview</a></li>
                 <li><a href="Servlet?command=signUp">Sign up</a></li>
-                <li><a href="Servlet?command=history">See history</a></li>
             </ul>
         </nav>
         <h2>
@@ -30,16 +29,14 @@
     <main>
         <table>
             <tr>
-                <th>E-mail</th>
-                <th>First Name</th>
-                <th>Last Name</th>
+                <th>Time</th>
+                <th>Type</th>
             </tr>
-            <c:forEach var ="person" items="${persons}">
-            <tr>
-                <td>${person.email}</td>
-                <td>${person.firstName}</td>
-                <td>${person.lastName}</td>
-            </tr>
+            <c:forEach var ="history" items="${history}">
+                <tr>
+                    <td>${history.key}</td>
+                    <td>${history.value}</td>
+                </tr>
             </c:forEach>
 
             <caption>Users Overview</caption>

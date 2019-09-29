@@ -7,15 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="987eb012-2dbe-4abe-a6a9-fe827e42e1b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../week01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week01/web/activity.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/personoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/personoverview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/signUp.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/out/production/week01/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/production/week01/controller/Servlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/src/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/src/controller/Servlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week01/web/personoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/web/personoverview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week01/web/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/web/signUp.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +212,7 @@
       <workItem from="1560596144030" duration="4829000" />
       <workItem from="1569760387491" duration="2849000" />
       <workItem from="1569763571543" duration="1765000" />
-      <workItem from="1569770447332" duration="7192000" />
+      <workItem from="1569770447332" duration="10313000" />
     </task>
     <servers />
   </component>

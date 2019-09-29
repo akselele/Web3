@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -19,6 +20,7 @@
 					<li id="actual"><a href="Servlet">Home</a></li>
 					<li><a href="Servlet?command=overview">Overview</a></li>
 					<li><a href="Servlet?command=signUp">Sign up</a></li>
+					<li><a href="Servlet?command=history">See history</a></li>
 				</ul>
 			</nav>
 			<h2>Home</h2>
@@ -31,11 +33,11 @@
 		aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
 		qui ratione voluptatem sequi nesciunt.
 				<a name="picture" href="Servlet?command=showPicture">Please, show my team</a>
-			<c:when test="${foto == true}">
+			<c:if test="${foto == true}">
 				<p>This is my team</p>
 					<img src ="images/belgischHockeyTeam.jpg">
-				<a href="Servlet?command=showPicture">In future, don't show my picture anymore</a>
-			</c:when>
+				<a href="Servlet?command=hidePicture">In future, don't show my picture anymore</a>
+			</c:if>
 		</main>
 		<footer> &copy; Webontwikkeling 3, UC Leuven-Limburg </footer>
 	</div>

@@ -7,12 +7,13 @@ import domain.model.Person;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
+import java.sql.Time;
+import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.*;
+import java.util.Timer;
 
 @WebServlet("/Servlet")
 public class Servlet extends HttpServlet {
@@ -41,6 +42,12 @@ public class Servlet extends HttpServlet {
             case "showPicture":
                 destination = showPicture(request,response);
                 break;
+            case "hidePicture":
+                destination = hidePicture(request,response);
+                break;
+            case "history":
+                destination = history(request,response);
+                break;
             default:
                 destination = showHome(request,response);
                 break;
@@ -50,6 +57,17 @@ public class Servlet extends HttpServlet {
 
     private String addPerson(HttpServletRequest request, HttpServletResponse response) {
         ArrayList<String> errors = new ArrayList<>();
+        HttpSession session = request.getSession();
+        if(session.getAttribute("time") == null){
+            Map<LocalTime,String> time = new TreeMap<>();
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            request.getSession().setAttribute("time", time);
+        }
+        else{
+            Map<LocalTime,String> time = (Map<LocalTime, String>) session.getAttribute("time");
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            request.getSession().setAttribute("time", time);
+        }
 
         Person person = new Person();
         setUserID(person, request, errors);
@@ -134,33 +152,100 @@ public class Servlet extends HttpServlet {
     }
 
     private String showSignUp(HttpServletRequest request, HttpServletResponse response) {
+        cookie(request);
+        HttpSession session = request.getSession();
+        if(session.getAttribute("time") == null){
+            Map<LocalTime,String> time = new HashMap<>();
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            request.getSession().setAttribute("time", time);
+        }
+        else{
+            Map<LocalTime,String> time = (Map<LocalTime, String>) session.getAttribute("time");
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            request.getSession().setAttribute("time", time);
+        }
         return "signUp.jsp";
     }
 
     private String showHome(HttpServletRequest request, HttpServletResponse response) {
         cookie(request);
+        HttpSession session = request.getSession();
+        if(session.getAttribute("time") == null){
+            Map<LocalTime,String> time = new TreeMap<>();
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            request.getSession().setAttribute("time", time);
+        }
+        else{
+            Map<LocalTime,String> time = (Map<LocalTime, String>) session.getAttribute("time");
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            request.getSession().setAttribute("time", time);
+        }
         return "index.jsp";
     }
 
     private String showOverview(HttpServletRequest request, HttpServletResponse response) {
         request.setAttribute("persons",personenDB.getAll());
+        HttpSession session = request.getSession();
+        if(session.getAttribute("time") == null){
+            Map<LocalTime,String> time = new TreeMap<>();
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            request.getSession().setAttribute("time", time);
+        }
+        else{
+            Map<LocalTime,String> time = (Map<LocalTime, String>) session.getAttribute("time");
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            request.getSession().setAttribute("time", time);
+        }
         return "personoverview.jsp";
     }
 
+    private String history(HttpServletRequest request, HttpServletResponse response) {
+        cookie(request);
+        HttpSession session = request.getSession();
+        if(session.getAttribute("time") != null){
+            Map<LocalTime,String> time = (Map<LocalTime, String>) session.getAttribute("time");
+            request.setAttribute("history", time);
+        }
+        return "activity.jsp";
+    }
+
     private String showPicture(HttpServletRequest request, HttpServletResponse response) {
+        HttpSession session = request.getSession();
+        if(session.getAttribute("time") == null){
+            Map<LocalTime,String> time = new TreeMap<>();
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            request.getSession().setAttribute("time", time);
+        }
+        else{
+            Map<LocalTime,String> time = (Map<LocalTime, String>) session.getAttribute("time");
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            request.getSession().setAttribute("time", time);
+        }
+        Cookie c = null;
+        c= new Cookie("foto","true");
+        c.setMaxAge(300);
+        request.setAttribute("foto", true);
+        response.addCookie(c);
+        return "index.jsp";
+    }
+
+    private String hidePicture(HttpServletRequest request, HttpServletResponse response) {
+        HttpSession session = request.getSession();
+        if(session.getAttribute("time") == null){
+            Map<LocalTime,String> time = new TreeMap<>();
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            request.getSession().setAttribute("time", time);
+        }
+        else{
+            Map<LocalTime,String> time = (Map<LocalTime, String>) session.getAttribute("time");
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            request.getSession().setAttribute("time", time);
+        }
         Cookie c = null;
         c= new Cookie("foto","false");
         request.setAttribute("foto", false);
         response.addCookie(c);
         return "index.jsp";
-    }
-
-    private void cookie(HttpServletRequest request){
-        Cookie c=getCookie(request,"foto");
-        request.setAttribute("foto", false);
-        if(c != null && c.getValue().equalsIgnoreCase("true")){
-            request.setAttribute("foto", true);
-        }
     }
 
     private Cookie getCookie(HttpServletRequest request, String key)
@@ -169,5 +254,13 @@ public class Servlet extends HttpServlet {
         if (cookies == null) return null;
         for (Cookie cookie : cookies) if (cookie.getName().equals(key)) return cookie;
         return null;
+    }
+
+    private void cookie(HttpServletRequest request){
+        Cookie c=getCookie(request,"foto");
+        request.setAttribute("foto", false);
+        if(c != null && c.getValue().equalsIgnoreCase("true")){
+            request.setAttribute("foto", true);
+        }
     }
 }

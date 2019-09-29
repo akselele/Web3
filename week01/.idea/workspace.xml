@@ -7,21 +7,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e472c11-85d5-4a54-8dde-a1781946e59e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ExamenWeb/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/activity.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ExamenWeb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExamenWeb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/personoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/personoverview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/signUp.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/week01/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week01/controller/Servlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Servlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/personoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/personoverview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signUp.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -71,7 +81,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1RVqyP9YZhmEJ65QNVWBKyTJxJ2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
@@ -199,8 +211,16 @@
       <workItem from="1569762868620" duration="605000" />
       <workItem from="1569763571591" duration="4998000" />
       <workItem from="1569768989191" duration="511000" />
-      <workItem from="1569770295706" duration="8262000" />
+      <workItem from="1569770295706" duration="12421000" />
     </task>
+    <task id="LOCAL-00001" summary="alles">
+      <created>1569784873171</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569784873172</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,5 +236,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="alles" />
+    <option name="LAST_COMMIT_MESSAGE" value="alles" />
   </component>
 </project>
