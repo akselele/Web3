@@ -97,7 +97,7 @@ public class Servlet extends HttpServlet {
             person.setEmail(email);
             request.setAttribute("emailClass", "has-succes");
             request.setAttribute("emailPreviousValue", email);
-        }catch(DomainException exc){
+        }catch(DbException exc){
             errors.add(exc.getMessage());
             request.setAttribute("emailClass", "has-error");
         }
