@@ -15,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class RegisterTest {
 	private WebDriver driver;
-	private String path = "http://localhost:8080/Servlet";
+	private String path = "http://localhost:8080/web_war_exploded/Servlet";
 	
 	@Before
 	public void setUp() {
@@ -24,7 +24,7 @@ public class RegisterTest {
 			// hint: zoek een werkende test op van web 2 ...
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\axlut\\Desktop\\TI3\\Web3\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get(path+"?action=signUp");
+		driver.get(path+"?command=signUp");
 	}
 	
 	@After
@@ -40,7 +40,7 @@ public class RegisterTest {
 		String title = driver.getTitle();
 		assertEquals("Overview",title);
 		
-		driver.get(path+"?action=overview");
+		driver.get(path+"?command=overview");
 		
 		ArrayList<WebElement> listItems=(ArrayList<WebElement>) driver.findElements(By.cssSelector("table tr"));
 		boolean found=false;
@@ -173,7 +173,7 @@ public class RegisterTest {
 		String useridRandom = generateRandomUseridInOrderToRunTestMoreThanOnce("pierke");
 		submitForm(useridRandom, "Pieter", "Pieters", "pieter.pieters@hotmail.com", "1234");
 		
-		driver.get(path+"?action=signUp");
+		driver.get(path+"?command=signUp");
 
 		submitForm(useridRandom, "Pieter", "Pieters", "pieter.pieters@hotmail.com", "1234");
 		

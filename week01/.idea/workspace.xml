@@ -7,31 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e472c11-85d5-4a54-8dde-a1781946e59e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ExamenWeb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExamenWeb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chromedriver.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../chromedriver.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/view/DB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/DbException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/DbException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/PersonDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/PersonDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/ProductDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/ProductDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/DomainException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/DomainException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/ShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/ShopService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/week01/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week01/controller/Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/week01/db/DbException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week01/db/DbException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/week01/db/PersonDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week01/db/PersonDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/week01/db/ProductDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week01/db/ProductDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/week01/domain/model/DomainException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week01/domain/model/DomainException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/week01/domain/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week01/domain/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/week01/domain/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week01/domain/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/week01/domain/model/ShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week01/domain/model/ShopService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/week01/view/RegisterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/week01/view/RegisterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/week01/view/SeleniumWorksWellTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/week01/view/SeleniumWorksWellTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Servlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/view/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/view/RegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/view/SeleniumWorksWellTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/view/SeleniumWorksWellTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/week01.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_jdbc_solution-master/src/ui/view/TestDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_jdbc_solution-master/src/ui/view/TestDB.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/Servlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1771">
-              <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+            <state relative-caret-position="573">
+              <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
               <folding>
                 <element signature="e#2251#2472#1" />
                 <element signature="e#2485#2744#1" />
@@ -55,10 +37,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/view/DB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="23" column="71" lean-forward="true" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domain/model/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/view/RegisterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="149" selection-start-line="149" selection-end-line="149" />
+            <state relative-caret-position="46">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+              <folding>
+                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#932#933#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/test/view/SeleniumWorksWellTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -78,6 +85,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -93,8 +101,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test/view/SeleniumWorksWellTest.java" />
-        <option value="$PROJECT_DIR$/test/view/RegisterTest.java" />
         <option value="$PROJECT_DIR$/src/controller/Servlet.java" />
+        <option value="$PROJECT_DIR$/src/ui/view/DB.java" />
+        <option value="$PROJECT_DIR$/test/view/RegisterTest.java" />
       </list>
     </option>
   </component>
@@ -179,6 +188,32 @@
             <path>
               <item name="week01" type="b2602c69:ProjectViewProjectNode" />
               <item name="week01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="week01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="week01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="week01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="week01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="week01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="week01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="week01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="week01" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -196,8 +231,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -208,8 +243,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569834833849" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../week02_jdbc_solution-master" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569839181930" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../postgresql-42.2.8.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -238,7 +273,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.16">
+  <component name="RunManager" selected="JUnit.RegisterTest.test_Register_EmailNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept">
+    <configuration name="DB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.view.DB" />
+      <module name="week01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegisterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="week01" />
       <extension name="coverage">
@@ -270,7 +318,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterTest.test_Register_PasswordNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterTest.test_Register_EmailNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="week01" />
       <extension name="coverage">
         <pattern>
@@ -280,23 +328,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="view" />
       <option name="MAIN_CLASS_NAME" value="view.RegisterTest" />
-      <option name="METHOD_NAME" value="test_Register_PasswordNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegisterTest.test_Register_UserAlreadyExists_ErrorMessageGiven" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="week01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="view" />
-      <option name="MAIN_CLASS_NAME" value="view.RegisterTest" />
-      <option name="METHOD_NAME" value="test_Register_UserAlreadyExists_ErrorMessageGiven" />
+      <option name="METHOD_NAME" value="test_Register_EmailNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -391,19 +423,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.RegisterTest" />
-      <item itemvalue="JUnit.RegisterTest.test_Register_AllFieldsFilledInCorrectly_UserIsRegistered" />
       <item itemvalue="JUnit.SeleniumWorksWellTest" />
-      <item itemvalue="JUnit.RegisterTest.test_Register_PasswordNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept" />
-      <item itemvalue="JUnit.RegisterTest.test_Register_UserAlreadyExists_ErrorMessageGiven" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.16" />
+      <item itemvalue="Application.DB" />
+      <item itemvalue="JUnit.RegisterTest.test_Register_AllFieldsFilledInCorrectly_UserIsRegistered" />
+      <item itemvalue="JUnit.RegisterTest.test_Register_EmailNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RegisterTest" />
-        <item itemvalue="JUnit.SeleniumWorksWellTest" />
-        <item itemvalue="JUnit.RegisterTest.test_Register_UserAlreadyExists_ErrorMessageGiven" />
-        <item itemvalue="JUnit.RegisterTest.test_Register_PasswordNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept" />
+        <item itemvalue="JUnit.RegisterTest.test_Register_EmailNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept" />
         <item itemvalue="JUnit.RegisterTest.test_Register_AllFieldsFilledInCorrectly_UserIsRegistered" />
+        <item itemvalue="JUnit.RegisterTest" />
+        <item itemvalue="Application.DB" />
+        <item itemvalue="JUnit.SeleniumWorksWellTest" />
       </list>
     </recent_temporary>
   </component>
@@ -423,6 +455,7 @@
       <workItem from="1569770295706" duration="12421000" />
       <workItem from="1569789709073" duration="850000" />
       <workItem from="1569832373040" duration="871000" />
+      <workItem from="1569836604471" duration="2412000" />
     </task>
     <task id="LOCAL-00001" summary="alles">
       <created>1569784873171</created>
@@ -435,18 +468,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SeleniumWorksWellTest - 2019.09.30 at 10h 34m 45s.xml">
-      <configuration name="SeleniumWorksWellTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RegisterTest_test_Register_PasswordNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept - 2019.09.30 at 10h 35m 00s.xml">
-      <configuration name="RegisterTest.test_Register_PasswordNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RegisterTest - 2019.09.30 at 11h 02m 47s.xml">
-      <configuration name="RegisterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RegisterTest_test_Register_UserAlreadyExists_ErrorMessageGiven - 2019.09.30 at 11h 05m 02s.xml">
-      <configuration name="RegisterTest.test_Register_UserAlreadyExists_ErrorMessageGiven" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RegisterTest - 2019.09.30 at 11h 06m 23s.xml">
       <configuration name="RegisterTest" configurationId="JUnit" />
     </history-entry>
@@ -465,15 +486,27 @@
     <history-entry file="RegisterTest - 2019.09.30 at 11h 13m 35s.xml">
       <configuration name="RegisterTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RegisterTest - 2019.09.30 at 12h 22m 06s.xml">
+      <configuration name="RegisterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegisterTest - 2019.09.30 at 12h 23m 28s.xml">
+      <configuration name="RegisterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegisterTest_test_Register_AllFieldsFilledInCorrectly_UserIsRegistered - 2019.09.30 at 12h 23m 39s.xml">
+      <configuration name="RegisterTest.test_Register_AllFieldsFilledInCorrectly_UserIsRegistered" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegisterTest_test_Register_EmailNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept - 2019.09.30 at 12h 25m 19s.xml">
+      <configuration name="RegisterTest.test_Register_EmailNotFilledIn_ErrorMessageGivenForEmailAndOtherFieldsValueKept" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1721000" />
+    <option name="totallyTimeSpent" value="4133000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -483,7 +516,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,30 +580,51 @@
     <option name="LAST_COMMIT_MESSAGE" value="alles" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/view/SeleniumWorksWellTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/view/RegisterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/signUp.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Servlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1771">
-          <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+        <state relative-caret-position="573">
+          <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
           <folding>
             <element signature="e#2251#2472#1" />
             <element signature="e#2485#2744#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/view/DB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="23" column="71" lean-forward="true" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/view/SeleniumWorksWellTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/view/RegisterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
           </folding>
         </state>
       </provider>
