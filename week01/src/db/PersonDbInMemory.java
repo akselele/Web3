@@ -17,7 +17,7 @@ public class PersonDbInMemory {
 	
 	public Person get(String personId){
 		if(personId == null){
-			throw new DbException("No id given");
+			throw new IllegalArgumentException("No id given");
 		}
 		return persons.get(personId);
 	}
@@ -28,27 +28,27 @@ public class PersonDbInMemory {
 
 	public void add(Person person){
 		if(person == null){
-			throw new DbException("No person given");
+			throw new IllegalArgumentException("No person given");
 		}
 		if (persons.containsKey(person.getUserid())) {
-			throw new DbException("User already exists");
+			throw new IllegalArgumentException("User already exists");
 		}
 		persons.put(person.getUserid(), person);
 	}
 	
 	public void update(Person person){
 		if(person == null){
-			throw new DbException("No person given");
+			throw new IllegalArgumentException("No person given");
 		}
 		if(!persons.containsKey(person.getUserid())){
-			throw new DbException("No person found");
+			throw new IllegalArgumentException("No person found");
 		}
 		persons.put(person.getUserid(), person);
 	}
 	
 	public void delete(String personId){
 		if(personId == null){
-			throw new DbException("No id given");
+			throw new IllegalArgumentException("No id given");
 		}
 		persons.remove(personId);
 	}

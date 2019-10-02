@@ -31,7 +31,9 @@
         <c:if test = "${not empty errors}">
         <div class="alert-danger">
             <ul>
-                <li>${errors}</li>
+            <c:forEach items="${errors}" var="error">
+                <li>${error}</li>
+            </c:forEach>
             </ul>
         </div>
         </c:if>
@@ -39,14 +41,14 @@
         <form method="post" action="Servlet?command=addPerson" novalidate="novalidate">
             <!-- novalidate in order to be able to run tests correctly -->
             <p><label for="userid">User id</label><input type="text" id="userid" name="userid"
-                                                         required></p>
+                                                         required value ="${UserIDPreviousValue}"></p>
             <p><label for="firstName">First Name</label><input type="text" id="firstName" name="firstName"
-                                                               required value=""></p>
+                                                               required value ="${FirstNamePreviousValue}"></p>
             <p><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName"
-                                                             required></p>
-            <p><label for="email">Email</label><input type="email" id="email" name="email" required></p>
+                                                             required value ="${LastNamePreviousValue}"></p>
+            <p><label for="email">Email</label><input type="email" id="email" name="email" required value ="${emailPreviousValue}"></p>
             <p><label for="password">Password</label><input type="password" id="password" name="password"
-                                                            required></p>
+                                                            required value ="${PasswordPreviousValue}"></p>
             <p><input type="submit" id="signUp" value="Sign Up"></p>
 
         </form>

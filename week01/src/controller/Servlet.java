@@ -79,8 +79,8 @@ public class Servlet extends HttpServlet {
         if(errors.size() == 0){
             try{
                 personenDB.add(person);
-                return showHome(request,response);
-            } catch(DbException exc){
+                return showOverview(request,response);
+            } catch(IllegalArgumentException exc){
                 request.setAttribute("errors", exc.getMessage());
                 return "signUp.jsp";
             }
@@ -97,7 +97,7 @@ public class Servlet extends HttpServlet {
             person.setEmail(email);
             request.setAttribute("emailClass", "has-succes");
             request.setAttribute("emailPreviousValue", email);
-        }catch(DbException exc){
+        }catch(IllegalArgumentException exc){
             errors.add(exc.getMessage());
             request.setAttribute("emailClass", "has-error");
         }
@@ -109,7 +109,7 @@ public class Servlet extends HttpServlet {
             person.setUserid(userID);
             request.setAttribute("UserIDClass", "has-succes");
             request.setAttribute("UserIDPreviousValue", userID);
-        }catch(DomainException exc){
+        }catch(IllegalArgumentException exc){
             errors.add(exc.getMessage());
             request.setAttribute("UserIDClass", "has-error");
         }
@@ -121,7 +121,7 @@ public class Servlet extends HttpServlet {
             person.setFirstName(firstName);
             request.setAttribute("FirstNameClass", "has-succes");
             request.setAttribute("FirstNamePreviousValue", firstName);
-        }catch(DomainException exc){
+        }catch(IllegalArgumentException exc){
             errors.add(exc.getMessage());
             request.setAttribute("FirstNameClass", "has-error");
         }
@@ -133,7 +133,7 @@ public class Servlet extends HttpServlet {
             person.setLastName(lastName);
             request.setAttribute("LastNameClass", "has-succes");
             request.setAttribute("LastNamePreviousValue", lastName);
-        }catch(DomainException exc){
+        }catch(IllegalArgumentException exc){
             errors.add(exc.getMessage());
             request.setAttribute("LastNameClass", "has-error");
         }
@@ -145,7 +145,7 @@ public class Servlet extends HttpServlet {
             person.setPassword(password);
             request.setAttribute("PasswordClass", "has-succes");
             request.setAttribute("PasswordPreviousValue", password);
-        }catch(DomainException exc){
+        }catch(IllegalArgumentException exc){
             errors.add(exc.getMessage());
             request.setAttribute("PasswordClass", "has-error");
         }

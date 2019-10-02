@@ -7,31 +7,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="987eb012-2dbe-4abe-a6a9-fe827e42e1b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chromedriver.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../chromedriver.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/BikeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/BikeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/DbException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/DbException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/Bike.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/Bike.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/DomainException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/DomainException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExamenWeb/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExamenWeb/controller/Servlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExamenWeb/db/BikeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExamenWeb/db/BikeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExamenWeb/db/DbException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExamenWeb/db/DbException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExamenWeb/domain/Bike.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExamenWeb/domain/Bike.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExamenWeb/domain/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExamenWeb/domain/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExamenWeb/domain/DomainException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExamenWeb/domain/DomainException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ExamenWeb/view/TestAddBike.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ExamenWeb/view/TestAddBike.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/db/DbException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/db/DbException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/db/PersonDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/db/PersonDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/db/ProductDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/db/ProductDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/DomainException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/DomainException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/ShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/ShopService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/signUp.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/out/production/week01/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/production/week01/controller/Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/production/week01/db/DbException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/production/week01/db/DbException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/out/production/week01/db/PersonDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/production/week01/db/PersonDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/production/week01/db/ProductDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/production/week01/db/ProductDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/production/week01/domain/model/DomainException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/production/week01/domain/model/DomainException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/out/production/week01/domain/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/production/week01/domain/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/production/week01/domain/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/production/week01/domain/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/production/week01/domain/model/ShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/production/week01/domain/model/ShopService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/out/test/week01/view/RegisterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/test/week01/view/RegisterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/test/week01/view/SeleniumWorksWellTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/test/week01/view/SeleniumWorksWellTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/src/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/src/controller/Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/test/view/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/test/view/RegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/test/view/SeleniumWorksWellTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/test/view/SeleniumWorksWellTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week01/src/db/PersonDbInMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/src/db/PersonDbInMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week01/src/domain/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/src/domain/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week01/web/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/web/signUp.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,13 +43,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/Servlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-158">
-              <caret line="111" column="15" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="15" />
+            <state relative-caret-position="-690">
+              <caret line="107" column="40" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/domain/Bike.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-230">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/bikeAdd.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="43" column="92" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/bikeDetail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-414" />
           </provider>
         </entry>
       </file>
@@ -96,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,11 +142,34 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ExamenWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExamenWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExamenWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExamenWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExamenWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExamenWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExamenWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExamenWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -131,7 +181,7 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560601028913" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570015183682" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -277,6 +327,7 @@
       <workItem from="1569763571543" duration="1765000" />
       <workItem from="1569770447332" duration="10313000" />
       <workItem from="1569834678263" duration="180000" />
+      <workItem from="1570013476569" duration="1584000" />
     </task>
     <servers />
   </component>
@@ -307,43 +358,44 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180000" />
+    <option name="totallyTimeSpent" value="1764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Application Servers" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,10 +450,29 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/bikeDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bikeAdd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="43" column="92" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Servlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="111" column="15" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="15" />
+        <state relative-caret-position="-690">
+          <caret line="107" column="40" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/Bike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-230">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,7 @@
 package domain.model;
 
+import db.DbException;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
