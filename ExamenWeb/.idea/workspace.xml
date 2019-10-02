@@ -7,34 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="987eb012-2dbe-4abe-a6a9-fe827e42e1b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/BikeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/BikeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/DbException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/db/DbException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/Bike.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/Bike.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/DomainException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/domain/DomainException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExamenWeb/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExamenWeb/controller/Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExamenWeb/db/BikeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExamenWeb/db/BikeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExamenWeb/db/DbException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExamenWeb/db/DbException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExamenWeb/domain/Bike.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExamenWeb/domain/Bike.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExamenWeb/domain/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExamenWeb/domain/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExamenWeb/domain/DomainException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExamenWeb/domain/DomainException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ExamenWeb/view/TestAddBike.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ExamenWeb/view/TestAddBike.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/controller/Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/db/PersonDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/db/PersonDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/WEB-INF/classes/domain/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/artifacts/web_war_exploded/signUp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/production/week01/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/production/week01/controller/Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/production/week01/db/PersonDbInMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/production/week01/db/PersonDbInMemory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/production/week01/domain/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/production/week01/domain/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/out/test/week01/view/RegisterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/out/test/week01/view/RegisterTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week01/src/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/src/controller/Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/src/db/PersonDbInMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/src/db/PersonDbInMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/src/domain/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/src/domain/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week01/web/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week01/web/signUp.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +156,7 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570015183682" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570015284175" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -327,7 +302,7 @@
       <workItem from="1569763571543" duration="1765000" />
       <workItem from="1569770447332" duration="10313000" />
       <workItem from="1569834678263" duration="180000" />
-      <workItem from="1570013476569" duration="1584000" />
+      <workItem from="1570013476569" duration="1918000" />
     </task>
     <servers />
   </component>
@@ -358,7 +333,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1764000" />
+    <option name="totallyTimeSpent" value="2098000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
