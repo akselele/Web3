@@ -1,23 +1,20 @@
 package controller;
 
-import db.DbException;
-import db.PersonDbInMemory;
-import domain.model.DomainException;
+
 import domain.model.Person;
+import domain.model.ShopService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
-import java.sql.Time;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.*;
-import java.util.Timer;
 
 @WebServlet("/Servlet")
 public class Servlet extends HttpServlet {
-    private PersonDbInMemory personenDB = new PersonDbInMemory();
+private ShopService shopService = new ShopService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request,response);
     }
@@ -68,7 +65,7 @@ public class Servlet extends HttpServlet {
 
         if(errors.size() == 0){
             try{
-                personenDB.add(person);
+                shopService.add(person);
                 return showOverview(request,response);
             } catch(IllegalArgumentException exc){
                 request.setAttribute("errors", exc.getMessage());
@@ -164,7 +161,7 @@ public class Servlet extends HttpServlet {
     }
 
     private String showOverview(HttpServletRequest request, HttpServletResponse response) {
-        request.setAttribute("persons",personenDB.getAll());
+        request.setAttribute("persons",shopService.getAll());
         session(request);
         return "personoverview.jsp";
     }

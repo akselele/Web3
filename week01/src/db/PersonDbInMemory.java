@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class PersonDbInMemory {
+public class PersonDbInMemory implements PersonDb {
 	private Map<String, Person> persons = new HashMap<>();
 	
 	public PersonDbInMemory () {
@@ -15,6 +15,7 @@ public class PersonDbInMemory {
 		add(administrator);
 	}
 	
+	@Override
 	public Person get(String personId){
 		if(personId == null){
 			throw new IllegalArgumentException("No id given");
@@ -22,10 +23,12 @@ public class PersonDbInMemory {
 		return persons.get(personId);
 	}
 	
+	@Override
 	public List<Person> getAll(){
 		return new ArrayList<Person>(persons.values());	
 	}
 
+	@Override
 	public void add(Person person){
 		if(person == null){
 			throw new IllegalArgumentException("No person given");
@@ -36,6 +39,7 @@ public class PersonDbInMemory {
 		persons.put(person.getUserid(), person);
 	}
 	
+	@Override
 	public void update(Person person){
 		if(person == null){
 			throw new IllegalArgumentException("No person given");
@@ -46,6 +50,7 @@ public class PersonDbInMemory {
 		persons.put(person.getUserid(), person);
 	}
 	
+	@Override
 	public void delete(String personId){
 		if(personId == null){
 			throw new IllegalArgumentException("No id given");
@@ -53,6 +58,7 @@ public class PersonDbInMemory {
 		persons.remove(personId);
 	}
 
+	@Override
 	public int getNumberOfPersons() {
 		return persons.size();
 	}

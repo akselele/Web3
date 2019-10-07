@@ -1,24 +1,23 @@
 package domain.model;
 
-import db.PersonDbInMemory;
+import db.PersonDb;
+import db.PersonDbInSQL;
 
 import java.util.List;
 
 public class ShopService {
-    private PersonDbInMemory personDb = new PersonDbInMemory();
+    private PersonDb personDb = new PersonDbInSQL();
 
-    public ShopService() {
-    }
 
     public Person getPerson(String personId) {
         return getPersonDb().get(personId);
     }
 
-    public List<Person> getPersons() {
+    public List<Person> getAll() {
         return getPersonDb().getAll();
     }
 
-    public void addPerson(Person person) {
+    public void add(Person person) {
         getPersonDb().add(person);
     }
 
@@ -30,7 +29,7 @@ public class ShopService {
         getPersonDb().delete(id);
     }
 
-    private PersonDbInMemory getPersonDb() {
+    private PersonDb getPersonDb() {
         return personDb;
     }
 }
