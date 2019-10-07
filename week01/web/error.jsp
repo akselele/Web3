@@ -19,29 +19,18 @@
                 <li><a href="Servlet">Home</a></li>
                 <li><a href="Servlet?command=overview">Overview</a></li>
                 <li><a href="Servlet?command=signUp">Sign up</a></li>
-                <li id="actual"><a href="Servlet?command=history">See history</a></li>
+                <li><a href="Servlet?command=history">See history</a></li>
             </ul>
         </nav>
         <h2>
-            User Overview
+            Something is Wrong
         </h2>
 
     </header>
     <main>
-        <table>
-            <tr>
-                <th>Time</th>
-                <th>Type</th>
-            </tr>
-            <c:forEach var ="history" items="${history}">
-                <tr>
-                    <td>${history.key}</td>
-                    <td>${history.value}</td>
-                </tr>
-            </c:forEach>
-
-            <caption>Users Overview</caption>
-        </table>
+        <p> name="title">Something is Wrong</p>
+        <p>You caused a ${pageContext.exception} on the server.</p>
+        <p>Go <a href="Servlet">home</a>.</p>
     </main>
     <footer>
         &copy; Webontwikkeling 3, UC Leuven-Limburg

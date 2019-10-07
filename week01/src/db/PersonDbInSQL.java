@@ -2,7 +2,6 @@ package db;
 
 import domain.model.Person;
 
-import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -38,17 +37,12 @@ public class PersonDbInSQL implements PersonDb {
                 String lastName = result.getString("lastName");
                 String email = result.getString("email");
                 String password = result.getString("password");
-                try {	// validation of data stored in database
-                    Person person = new Person(userid, email, password, firstName,lastName);
-                    people.add(person);
-                    System.out.println(person.toString());
-                }
-                catch (IllegalArgumentException e) {
-                    System.out.println(e.getMessage());
-                }
+                Person person = new Person(userid, email, password, firstName,lastName);
+                people.add(person);
+                System.out.println(person.toString());
             }
         } catch (SQLException e) {
-            throw  new DbException(e.getMessage(),e);
+            throw new DbException(e.getMessage(),e);
         }
         return people;
     }
@@ -91,7 +85,7 @@ public class PersonDbInSQL implements PersonDb {
             statement.execute(sql);
         }
         catch(SQLException e){
-            throw new DbException(e);
+            throw new DbException(e.getMessage(),e);
         }
     }
 
@@ -110,7 +104,7 @@ public class PersonDbInSQL implements PersonDb {
             statement.execute(sql);
         }
         catch(SQLException e){
-            throw new DbException(e);
+            throw new DbException(e.getMessage(),e);
         }
     }
 
@@ -121,7 +115,7 @@ public class PersonDbInSQL implements PersonDb {
             Statement statement = connection.createStatement()){
             statement.execute(sql);
         } catch (SQLException e) {
-            throw  new DbException(e.getMessage(),e);
+            throw new DbException(e.getMessage(),e);
         }
     }
 
@@ -133,7 +127,7 @@ public class PersonDbInSQL implements PersonDb {
             ResultSet result = statement.executeQuery("SELECT count(\"HamelryckAxelWeb3\".person.userid) FROM \"HamelryckAxelWeb3\".person");
             x=Integer.parseInt(result.getString("count"));
         } catch (SQLException e) {
-            throw  new DbException(e.getMessage(),e);
+            throw new DbException(e.getMessage(),e);
         }
         return x;
     }
