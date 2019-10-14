@@ -50,9 +50,11 @@ public class PersonDbInSQL implements PersonDb {
     @Override
     public Person get(String userId) {
         Person person = null;
+        String sql = "SELECT * FROM \"HamelryckAxelWeb3\".person WHERE \"HamelryckAxelWeb3\".person.userid = ?";
         try(Connection connection = DriverManager.getConnection(url,properties);
-            Statement statement = connection.createStatement()){
-            ResultSet result = statement.executeQuery("SELECT * FROM \"HamelryckAxelWeb3\".person WHERE \"HamelryckAxelWeb3\".person.userid = '" + userId + "'");
+            PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setString(1, userId);
+            ResultSet result = statement.executeQuery();
             while(result.next()){
                 String userid = result.getString("userid");
                 String firstName = result.getString("firstName");
@@ -79,10 +81,15 @@ public class PersonDbInSQL implements PersonDb {
             throw new DbException("Nothing to add");
         }
         String sql = "INSERT INTO \"HamelryckAxelWeb3\".person (userid, \"lastName\", \"firstName\", email, password) " +
-                "VALUES ('" + person.getUserid() + "', '" + person.getLastName() +"', '" + person.getFirstName() +"', '" + person.getEmail()+"' ,  '" +  person.getPassword() +"')";
+                "VALUES (?, ? , ? , ? , ?)";
         try(Connection connection = DriverManager.getConnection(url, properties);
-        Statement statement= connection.createStatement()){
-            statement.execute(sql);
+        PreparedStatement statement= connection.prepareStatement(sql)){
+            statement.setString(1, person.getUserid());
+            statement.setString(2, person.getLastName());
+            statement.setString(3, person.getFirstName());
+            statement.setString(4, person.getEmail());
+            statement.setString(5, person.getPassword());
+            statement.execute();
         }
         catch(SQLException e){
             throw new DbException(e.getMessage(),e);
@@ -94,13 +101,18 @@ public class PersonDbInSQL implements PersonDb {
         if(person == null){
             throw new DbException("Nothing to add");
         }
-        String sql = "UPDATE \"HamelryckAxelWeb3\".person SET \"HamelryckAxelWeb3\".person.userid = '"+person.getUserid() + "', " +
-                "SET \"HamelryckAxelWeb3\".person.lastName = '" + person.getLastName()+ "'," +
-                "SET \"HamelryckAxelWeb3\".person.firstName = '" + person.getFirstName() +"'," +
-                "SET \"HamelryckAxelWeb3\".person.email = '" + person.getEmail() + "', " +
-                "SET \"HamelryckAxelWeb3\".person.password = '" +person.getPassword() + "',";
+        String sql = "UPDATE \"HamelryckAxelWeb3\".person SET \"HamelryckAxelWeb3\".person.userid = ? " +
+                "SET \"HamelryckAxelWeb3\".person.lastName = ? " +
+                "SET \"HamelryckAxelWeb3\".person.firstName = ? " +
+                "SET \"HamelryckAxelWeb3\".person.email = ?" +
+                "SET \"HamelryckAxelWeb3\".person.password = ? ";
         try(Connection connection = DriverManager.getConnection(url, properties);
-            Statement statement= connection.createStatement()){
+            PreparedStatement statement= connection.prepareStatement(sql)){
+            statement.setString(1, person.getUserid());
+            statement.setString(2, person.getLastName());
+            statement.setString(3, person.getFirstName());
+            statement.setString(4, person.getEmail());
+            statement.setString(5, person.getPassword());
             statement.execute(sql);
         }
         catch(SQLException e){
@@ -110,9 +122,10 @@ public class PersonDbInSQL implements PersonDb {
 
     @Override
     public void delete(String personId) {
-        String sql = "DELETE FROM \"HamelryckAxelWeb3\".person WHERE \"HamelryckAxelWeb3\".person.userid = '" + personId + "'";
+        String sql = "DELETE FROM \"HamelryckAxelWeb3\".person WHERE \"HamelryckAxelWeb3\".person.userid = ?";
         try(Connection connection = DriverManager.getConnection(url,properties);
-            Statement statement = connection.createStatement()){
+            PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setString(1, personId);
             statement.execute(sql);
         } catch (SQLException e) {
             throw new DbException(e.getMessage(),e);

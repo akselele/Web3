@@ -2,11 +2,14 @@ package domain.model;
 
 import db.PersonDb;
 import db.PersonDbInSQL;
+import db.ProductDb;
+import db.ProductDbInSQL;
 
 import java.util.List;
 
 public class ShopService {
     private PersonDb personDb = new PersonDbInSQL();
+    private ProductDb productDb = new ProductDbInSQL();
 
 
     public Person getPerson(String personId) {
@@ -27,6 +30,30 @@ public class ShopService {
 
     public void deletePerson(String id) {
         getPersonDb().delete(id);
+    }
+
+    private ProductDb getProductDb() {
+        return productDb;
+    }
+
+    public Product getProduct(String productid) {
+        return getProductDb().get(productid);
+    }
+
+    public List<Product> getAllProduct() {
+        return getProductDb().getAll();
+    }
+
+    public void addProduct(Product product) {
+        getProductDb().add(product);
+    }
+
+    public void updateProducts(Product product) {
+        getProductDb().update(product);
+    }
+
+    public void deleteProduct(String id) {
+        getProductDb().delete(id);
     }
 
     private PersonDb getPersonDb() {

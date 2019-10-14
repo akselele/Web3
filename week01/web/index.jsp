@@ -18,7 +18,8 @@
 			<nav>
 				<ul>
 					<li id="actual"><a href="Servlet">Home</a></li>
-					<li><a href="Servlet?command=overview">Overview</a></li>
+					<li><a href="Servlet?command=overview">Person Overview</a></li>
+					<li><a href="Servlet?command=productoverview">Product Overview</a></li>
 					<li><a href="Servlet?command=signUp">Sign up</a></li>
 					<li><a href="Servlet?command=history">See history</a></li>
 				</ul>

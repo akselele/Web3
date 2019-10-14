@@ -1,13 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" %>
+         pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="UTF-8">
-    <title>Person Overview</title>
+    <title>Product Overview</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -17,8 +17,8 @@
         <nav>
             <ul>
                 <li><a href="Servlet">Home</a></li>
-                <li id="actual"><a href="Servlet?command=overview">Person Overview</a></li>
-                <li><a href="Servlet?command=productoverview">Product Overview</a></li>
+                <li><a href="Servlet?command=overview">Person Overview</a></li>
+                <li id="actual"><a href="Servlet?command=productoverview">Product Overview</a></li>
                 <li><a href="Servlet?command=signUp">Sign up</a></li>
                 <li><a href="Servlet?command=history">See history</a></li>
             </ul>
@@ -31,19 +31,19 @@
     <main>
         <table>
             <tr>
-                <th>E-mail</th>
-                <th>First Name</th>
-                <th>Last Name</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
             </tr>
-            <c:forEach var ="person" items="${persons}">
-            <tr>
-                <td>${person.email}</td>
-                <td>${person.firstName}</td>
-                <td>${person.lastName}</td>
-            </tr>
+            <c:forEach var ="product" items="${products}">
+                <tr>
+                    <td>${product.name}</td>
+                    <td>${product.description}</td>
+                    <td>${product.price}</td>
+                </tr>
             </c:forEach>
 
-            <caption>Users Overview</caption>
+            <caption>Products Overview</caption>
         </table>
     </main>
     <footer>

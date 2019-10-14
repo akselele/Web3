@@ -27,6 +27,9 @@ private ShopService shopService = new ShopService();
         String command = request.getParameter("command");
         String destination;
         switch(command == null ?"":command){
+            case "productoverview":
+                destination= showProductOverview(request,response);
+                break;
             case "overview":
                 destination = showOverview(request,response);
                 break;
@@ -50,6 +53,12 @@ private ShopService shopService = new ShopService();
                 break;
         }
         request.getRequestDispatcher(destination).forward(request,response);
+    }
+
+    private String showProductOverview(HttpServletRequest request, HttpServletResponse response) {
+        request.setAttribute("products",shopService.getAllProduct());
+        session(request);
+        return "productoverview.jsp";
     }
 
     private String addPerson(HttpServletRequest request, HttpServletResponse response) {
