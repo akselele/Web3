@@ -19,6 +19,7 @@ public class ProductDbInSQL implements ProductDb {
         properties.setProperty("ssl", "true");
         properties.setProperty("sslfactory", "org.postgresql.ssl.NonValidatingFactory");
         properties.setProperty("sslmode","prefer");
+        properties.setProperty("stringType", "unspecified");
         try{
             Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
@@ -36,7 +37,7 @@ public class ProductDbInSQL implements ProductDb {
                 int userid = Integer.parseInt(result.getString("productid"));
                 String name = result.getString("name");
                 String description = result.getString("description");
-                double price = Double.parseDouble(result.getString("price"));
+                Double price = Double.parseDouble(result.getString("price"));
                 Product product = new Product(userid ,name, description, price);
                 products.add(product);
                 System.out.println(product.toString());
@@ -79,14 +80,14 @@ public class ProductDbInSQL implements ProductDb {
         if(product == null){
             throw new DbException("Nothing to add");
         }
-        String sql = "INSERT INTO \"HamelryckAxelWeb3\".product (productid, name , description, price" +
-                "VALUES (?, ? , ? , ?)";
+        String sql = "INSERT INTO \"HamelryckAxelWeb3\".product (productid, name , description, price)" +
+                "VALUES (?, ? , ? , ?::numeric)";
         try(Connection connection = DriverManager.getConnection(url, properties);
             PreparedStatement statement= connection.prepareStatement(sql)){
             statement.setString(1, Integer.toString(product.getProductId()));
             statement.setString(2, product.getName());
             statement.setString(3, product.getDescription());
-            statement.setString(4, Double.toString(product.getPrice()));
+            statement.setString(4, String.valueOf(product.getPrice()));
             statement.execute();
         }
         catch(SQLException e){

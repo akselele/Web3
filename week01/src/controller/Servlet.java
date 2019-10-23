@@ -1,20 +1,46 @@
 package controller;
 
 
+import db.DbException;
 import domain.model.Person;
+import domain.model.Product;
 import domain.model.ShopService;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.*;
 
 @WebServlet("/Servlet")
 public class Servlet extends HttpServlet {
-private ShopService shopService = new ShopService();
+private ShopService shopService;
+
+    public Servlet(){
+      super();
+    }
+
+    @Override
+    public void init() throws ServletException {
+        super.init();
+        ServletContext context =getServletContext();
+
+        Properties properties =new Properties();
+        properties.setProperty("user",context.getInitParameter("user"));
+        properties.setProperty("password",context.getInitParameter("password"));
+        properties.setProperty("ssl",context.getInitParameter("ssl"));
+        properties.setProperty("sslfactory",context.getInitParameter("sslfactory"));
+        properties.setProperty("sslmode",context.getInitParameter("sslmode"));
+        properties.setProperty("url",context.getInitParameter("url"));
+
+        shopService = new ShopService(properties);
+    }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request,response);
     }
@@ -48,11 +74,52 @@ private ShopService shopService = new ShopService();
             case "history":
                 destination = history(request,response);
                 break;
+            case "showAddProduct":
+                destination = showAddProduct(request,response);
+                break;
+            case "addProduct":
+                destination = addProduct(request,response);
+                break;
             default:
                 destination = showHome(request,response);
                 break;
         }
         request.getRequestDispatcher(destination).forward(request,response);
+    }
+
+    private String addProduct(HttpServletRequest request, HttpServletResponse response) {
+        ArrayList<String> errorsProduct = new ArrayList<>();
+        session(request);
+
+        Product product = new Product();
+        setProductID(product,request,errorsProduct);
+        setName(product, request, errorsProduct);
+        setPrice(product, request, errorsProduct);
+        setDescription(product, request, errorsProduct);
+
+        if(errorsProduct.size() == 0){
+            try{
+                shopService.addProduct(product);
+                return showProductOverview(request,response);
+            } catch(IllegalArgumentException exc){
+                request.setAttribute("errors", exc.getMessage());
+                return "addProduct.jsp";
+            }
+        }
+        else{
+            request.setAttribute("errors", errorsProduct);
+            return "addProduct.jsp";
+        }
+    }
+
+    private void setProductID(Product product, HttpServletRequest request, ArrayList<String> errorsProduct) {
+        product.setProductId(shopService.getAllProduct().size() + 1);
+    }
+
+    private String showAddProduct(HttpServletRequest request, HttpServletResponse response) {
+        cookie(request);
+        session(request);
+        return "addProduct.jsp";
     }
 
     private String showProductOverview(HttpServletRequest request, HttpServletResponse response) {
@@ -111,6 +178,42 @@ private ShopService shopService = new ShopService();
         }
     }
 
+    private void setName(Product product, HttpServletRequest request, ArrayList<String> errors){
+        String name =request.getParameter("name");
+        try{
+            product.setName(name);
+            request.setAttribute("nameClass", "has-succes");
+            request.setAttribute("productNamePreviousValue", name);
+        }catch(IllegalArgumentException exc){
+            errors.add(exc.getMessage());
+            request.setAttribute("nameClass", "has-error");
+        }
+    }
+
+    private void setPrice(Product product, HttpServletRequest request, ArrayList<String> errors){
+        String price =request.getParameter("price");
+        try{
+            product.setPrice(Double.parseDouble(price));
+            request.setAttribute("priceClass", "has-succes");
+            request.setAttribute("pricePreviousValue", price);
+        }catch(IllegalArgumentException exc){
+            errors.add(exc.getMessage());
+            request.setAttribute("priceClass", "has-error");
+        }
+    }
+
+    private void setDescription(Product product, HttpServletRequest request, ArrayList<String> errors){
+        String description =request.getParameter("description");
+        try{
+            product.setDescription(description);
+            request.setAttribute("descriptionClass", "has-succes");
+            request.setAttribute("descriptionPreviousValue", description);
+        }catch(IllegalArgumentException exc){
+            errors.add(exc.getMessage());
+            request.setAttribute("descriptionClass", "has-error");
+        }
+    }
+
     private void setFirstName(Person person, HttpServletRequest request, ArrayList<String> errors){
         String firstName =request.getParameter("firstName");
         try{
@@ -135,31 +238,23 @@ private ShopService shopService = new ShopService();
         }
     }
 
-    private void setPassword(Person person, HttpServletRequest request, ArrayList<String> errors){
+    private void setPassword(Person person, HttpServletRequest request, ArrayList<String> errors) {
         String password =request.getParameter("password");
         try{
-            person.setPassword(password);
+            person.setHashedPassword(password);
             request.setAttribute("PasswordClass", "has-succes");
             request.setAttribute("PasswordPreviousValue", password);
         }catch(IllegalArgumentException exc){
             errors.add(exc.getMessage());
             request.setAttribute("PasswordClass", "has-error");
+        } catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
+            throw new DbException(e.getMessage(),e);
         }
     }
 
     private String showSignUp(HttpServletRequest request, HttpServletResponse response) {
         cookie(request);
-        HttpSession session = request.getSession();
-        if(session.getAttribute("time") == null){
-            Map<LocalTime,String> time = new HashMap<>();
-            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
-            request.getSession().setAttribute("time", time);
-        }
-        else{
-            Map<LocalTime,String> time = (Map<LocalTime, String>) session.getAttribute("time");
-            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
-            request.getSession().setAttribute("time", time);
-        }
+        session(request);
         return "signUp.jsp";
     }
 

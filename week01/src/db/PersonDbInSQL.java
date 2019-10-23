@@ -8,18 +8,15 @@ import java.util.List;
 import java.util.Properties;
 
 public class PersonDbInSQL implements PersonDb {
-    private Properties properties= new Properties();
-    String url = "jdbc:postgresql://databanken.ucll.be:51920/2TX34?currentSchema=HamelryckAxelWeb3.person";
+    private Properties properties;
+    private String url;
 
-    public PersonDbInSQL(){
-        String url = "jdbc:postgresql://databanken.ucll.be:51920/2TX34?currentSchema=HamelryckAxelWeb3.person";
-        properties.setProperty("user", "local_r0743950");
-        properties.setProperty("password", "Sqnhe\"Dlèx4T5!");
-        properties.setProperty("ssl", "true");
-        properties.setProperty("sslfactory", "org.postgresql.ssl.NonValidatingFactory");
-        properties.setProperty("sslmode","prefer");
+    public PersonDbInSQL(Properties properties){
+        this.properties = properties;
         try{
             Class.forName("org.postgresql.Driver");
+            this.properties = properties;
+            this.url = properties.getProperty("url");
         } catch (ClassNotFoundException e) {
             throw new DbException(e.getMessage(),e);
         }
@@ -88,7 +85,7 @@ public class PersonDbInSQL implements PersonDb {
             statement.setString(2, person.getLastName());
             statement.setString(3, person.getFirstName());
             statement.setString(4, person.getEmail());
-            statement.setString(5, person.getPassword());
+            statement.setString(5, person.getHashedPassword());
             statement.execute();
         }
         catch(SQLException e){

@@ -20,11 +20,12 @@
                 <li><a href="Servlet?command=overview">Person Overview</a></li>
                 <li id="actual"><a href="Servlet?command=productoverview">Product Overview</a></li>
                 <li><a href="Servlet?command=signUp">Sign up</a></li>
+                <li><a href="Servlet?command=showAddProduct">Add product</a></li>
                 <li><a href="Servlet?command=history">See history</a></li>
             </ul>
         </nav>
         <h2>
-            User Overview
+            Product Overview
         </h2>
 
     </header>
@@ -38,8 +39,8 @@
             <c:forEach var ="product" items="${products}">
                 <tr>
                     <td>${product.name}</td>
-                    <td>${product.description}</td>
                     <td>${product.price}</td>
+                    <td>${product.description}</td>
                 </tr>
             </c:forEach>
 

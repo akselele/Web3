@@ -1,6 +1,10 @@
 package domain.model;
 
 
+import java.io.UnsupportedEncodingException;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -10,6 +14,7 @@ public class Person {
 	private String password;
 	private String firstName;
 	private String lastName;
+	private String hashedPassword;
 
 	public Person(String userid, String email, String password, String firstName, String lastName) {
 		setUserid(userid);
@@ -21,6 +26,8 @@ public class Person {
 	
 	public Person() {
 	}
+
+
 
 	public String getUserid() {
 		return userid;
@@ -48,7 +55,13 @@ public class Person {
 		this.email = email;
 	}
 
-	
+	public void setHashedPassword(String password)throws NoSuchAlgorithmException, UnsupportedEncodingException {
+		MessageDigest crypt = MessageDigest.getInstance("SHA-512");
+		crypt.reset();
+
+		crypt.update(password.getBytes("UTF-8"));
+		hashedPassword = new BigInteger(1, crypt.digest()).toString(16);
+	}
 	
 	public String getEmail() {
 		return email;
@@ -56,6 +69,10 @@ public class Person {
 	
 	public String getPassword() {
 		return password;
+	}
+
+	public String getHashedPassword(){
+		return hashedPassword;
 	}
 	
 	public boolean isCorrectPassword(String password) {

@@ -32,7 +32,7 @@ public class Product {
 	}
 	public void setName(String name) {
 		if (name.isEmpty()) {
-			throw new DomainException("No name given");
+			throw new IllegalArgumentException("No name given");
 		}
 		this.name = name;
 	}
@@ -41,7 +41,7 @@ public class Product {
 	}
 	public void setDescription(String description) {
 		if (description.isEmpty()) {
-			throw new DomainException("No description given");
+			throw new IllegalArgumentException("No description given");
 		}
 		
 		this.description = description;
@@ -51,13 +51,13 @@ public class Product {
 	}
 	public void setPrice(double price) {
 		if (price<0) {
-			throw new DomainException("Give a valid price");
+			throw new IllegalArgumentException("Give a valid price");
 		}
 		this.price = price;
 	}
 	public void setPrice(String price) {
 		if (price.isEmpty()) {
-			throw new DomainException("No price given");
+			throw new IllegalArgumentException("No price given");
 		}
 		setPrice(Double.valueOf(price));
 	}

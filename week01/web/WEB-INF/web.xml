@@ -26,4 +26,30 @@
         <welcome-file>Servlet</welcome-file>
     </welcome-file-list>
 
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:postgresql://databanken.ucll.be:51920/2TX34?currentSchema=HamelryckAxelWeb3.person</param-value>
+    </context-param>
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>local_r0743950</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>Sqnhe"Dlèx4T5!</param-value>
+    </context-param>
+    <context-param>
+        <param-name>ssl</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>sslfactory</param-name>
+        <param-value>org.postgresql.ssl.NonValidatingFactory</param-value>
+    </context-param>
+    <context-param>
+        <param-name>sslmode</param-name>
+        <param-value>prefer</param-value>
+    </context-param>
+
+
 </web-app>

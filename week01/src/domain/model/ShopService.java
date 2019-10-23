@@ -6,10 +6,15 @@ import db.ProductDb;
 import db.ProductDbInSQL;
 
 import java.util.List;
+import java.util.Properties;
 
 public class ShopService {
-    private PersonDb personDb = new PersonDbInSQL();
+    private PersonDb personDb;
     private ProductDb productDb = new ProductDbInSQL();
+
+    public ShopService(Properties properties){
+        personDb = new PersonDbInSQL(properties);
+    }
 
 
     public Person getPerson(String personId) {
