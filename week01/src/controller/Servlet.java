@@ -51,43 +51,41 @@ private ShopService shopService;
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         String command = request.getParameter("command");
-        String destination;
         switch(command == null ?"":command){
             case "productoverview":
-                destination= showProductOverview(request,response);
+                showProductOverview(request,response);
                 break;
             case "overview":
-                destination = showOverview(request,response);
+                showOverview(request,response);
                 break;
             case "signUp":
-                destination = showSignUp(request,response);
+                showSignUp(request,response);
                 break;
             case "addPerson":
-                destination = addPerson(request,response);
+                addPerson(request,response);
                 break;
             case "showPicture":
-                destination = showPicture(request,response);
+                showPicture(request,response);
                 break;
             case "hidePicture":
-                destination = hidePicture(request,response);
+                hidePicture(request,response);
                 break;
             case "history":
-                destination = history(request,response);
+                history(request,response);
                 break;
             case "showAddProduct":
-                destination = showAddProduct(request,response);
+                showAddProduct(request,response);
                 break;
             case "addProduct":
-                destination = addProduct(request,response);
+                addProduct(request,response);
                 break;
             default:
-                destination = showHome(request,response);
+                showHome(request,response);
                 break;
         }
-        request.getRequestDispatcher(destination).forward(request,response);
     }
 
-    private String addProduct(HttpServletRequest request, HttpServletResponse response) {
+    private void addProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ArrayList<String> errorsProduct = new ArrayList<>();
         session(request);
 
@@ -100,15 +98,15 @@ private ShopService shopService;
         if(errorsProduct.size() == 0){
             try{
                 shopService.addProduct(product);
-                return showProductOverview(request,response);
+                showProductOverview(request,response);
             } catch(IllegalArgumentException exc){
                 request.setAttribute("errors", exc.getMessage());
-                return "addProduct.jsp";
+                request.getRequestDispatcher("addProduct.jsp").forward(request,response);
             }
         }
         else{
             request.setAttribute("errors", errorsProduct);
-            return "addProduct.jsp";
+            request.getRequestDispatcher("addProduct.jsp").forward(request,response);
         }
     }
 
@@ -116,19 +114,19 @@ private ShopService shopService;
         product.setProductId(shopService.getAllProduct().size() + 1);
     }
 
-    private String showAddProduct(HttpServletRequest request, HttpServletResponse response) {
+    private void showAddProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         cookie(request);
         session(request);
-        return "addProduct.jsp";
+        request.getRequestDispatcher("addProduct.jsp").forward(request,response);
     }
 
-    private String showProductOverview(HttpServletRequest request, HttpServletResponse response) {
+    private void showProductOverview(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("products",shopService.getAllProduct());
         session(request);
-        return "productoverview.jsp";
+        request.getRequestDispatcher("productoverview.jsp").forward(request,response);
     }
 
-    private String addPerson(HttpServletRequest request, HttpServletResponse response) {
+    private void addPerson(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ArrayList<String> errors = new ArrayList<>();
         session(request);
 
@@ -142,15 +140,16 @@ private ShopService shopService;
         if(errors.size() == 0){
             try{
                 shopService.add(person);
-                return showOverview(request,response);
+                showOverview(request,response);
             } catch(IllegalArgumentException exc){
                 request.setAttribute("errors", exc.getMessage());
-                return "signUp.jsp";
+                request.getRequestDispatcher("signUp.jsp").forward(request,response);
+
             }
         }
         else{
             request.setAttribute("errors", errors);
-            return "signUp.jsp";
+            request.getRequestDispatcher("signUp.jsp").forward(request,response);
         }
     }
 
@@ -252,51 +251,51 @@ private ShopService shopService;
         }
     }
 
-    private String showSignUp(HttpServletRequest request, HttpServletResponse response) {
+    private void showSignUp(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         cookie(request);
         session(request);
-        return "signUp.jsp";
+        request.getRequestDispatcher("signUp.jsp").forward(request,response);
     }
 
-    private String showHome(HttpServletRequest request, HttpServletResponse response) {
+    private void showHome(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         cookie(request);
         session(request);
-        return "index.jsp";
+        request.getRequestDispatcher("index.jsp").forward(request,response);
     }
 
-    private String showOverview(HttpServletRequest request, HttpServletResponse response) {
+    private void showOverview(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("persons",shopService.getAll());
         session(request);
-        return "personoverview.jsp";
+        request.getRequestDispatcher("personoverview.jsp").forward(request,response);
     }
 
-    private String history(HttpServletRequest request, HttpServletResponse response) {
+    private void history(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         cookie(request);
         HttpSession session = request.getSession();
         if(session.getAttribute("time") != null){
             Map<LocalTime,String> time = (Map<LocalTime, String>) session.getAttribute("time");
             request.setAttribute("history", time);
         }
-        return "activity.jsp";
+        request.getRequestDispatcher("activity.jsp").forward(request,response);
     }
 
-    private String showPicture(HttpServletRequest request, HttpServletResponse response) {
+    private void showPicture(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         session(request);
         Cookie c = null;
         c= new Cookie("foto","true");
         c.setMaxAge(300);
         request.setAttribute("foto", true);
         response.addCookie(c);
-        return "index.jsp";
+        request.getRequestDispatcher("index.jsp").forward(request,response);
     }
 
-    private String hidePicture(HttpServletRequest request, HttpServletResponse response) {
+    private void hidePicture(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         session(request);
         Cookie c = null;
         c= new Cookie("foto","false");
         request.setAttribute("foto", false);
         response.addCookie(c);
-        return "index.jsp";
+        request.getRequestDispatcher("index.jsp").forward(request,response);
     }
 
     private Cookie getCookie(HttpServletRequest request, String key)
@@ -319,12 +318,12 @@ private ShopService shopService;
         HttpSession session = request.getSession();
         if(session.getAttribute("time") == null){
             Map<LocalTime,String> time = new TreeMap<>();
-            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[1].getMethodName());
             request.getSession().setAttribute("time", time);
         }
         else{
             Map<LocalTime,String> time = (Map<LocalTime, String>) session.getAttribute("time");
-            time.put(LocalTime.now(), new Throwable().getStackTrace()[0].getMethodName());
+            time.put(LocalTime.now(), new Throwable().getStackTrace()[1].getMethodName());
             request.getSession().setAttribute("time", time);
         }
     }
