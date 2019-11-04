@@ -26,7 +26,15 @@
 				</ul>
 			</nav>
 			<h2>Home</h2>
-
+			<c:choose>
+				<c:when test = "${not empty text}">
+					<p>Welcome, ${text}</p>
+					<a href="Servlet?command=logOut">Log out</a>
+				</c:when>
+				<c:otherwise>
+					<a href="Servlet?command=showLogIn">Log in</a>
+				</c:otherwise>
+			</c:choose>
 		</header>
 		<main> Sed ut perspiciatis unde omnis iste natus error sit
 		voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque

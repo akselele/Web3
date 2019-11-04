@@ -47,15 +47,6 @@ public class Servlet extends HttpServlet {
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         factory.getHandler(request,response,service).handleRequest(request,response);
-
-//        RequestHandler handler = factory.getHandler(request,response,service);
-//
-//        handler.setService(service);
-//        String destination = handler.handleRequest(request,response);
-//        RequestDispatcher view = request.getRequestDispatcher("/Servlet");
-//        view.forward(request, response);
     }
-
-
 
 }

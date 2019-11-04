@@ -64,4 +64,14 @@ public class ShopService {
     private PersonDb getPersonDb() {
         return personDb;
     }
+
+    public Person getUserIfAuthenticated(String userid, String password){
+        Person person = getPerson(userid);
+        if(person.isCorrectPassword(password)){
+            return person;
+        }
+        else{
+            return null;
+        }
+    }
 }
