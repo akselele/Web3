@@ -79,10 +79,69 @@ private ShopService shopService;
             case "addProduct":
                 addProduct(request,response);
                 break;
+            case "deletePerson":
+                deletePerson(request,response);
+                break;
+            case "deleteProduct":
+                deleteProduct(request,response);
+                break;
+            case "showCheck":
+                showCheck(request,response);
+            case "checkPassword":
+                checkPassword(request,response);
+                break;
+            case "successSignUp":
+                successSignUp(request,response);
+                break;
+            case "successProduct":
+                successProduct(request,response);
+                break;
             default:
                 showHome(request,response);
                 break;
         }
+    }
+
+    private void successProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        session(request);
+        request.getRequestDispatcher("successPages/productSuccess.jsp").forward(request,response);
+    }
+
+    private void successSignUp(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        session(request);
+        request.getRequestDispatcher("successPages/signUpSuccess.jsp").forward(request,response);
+    }
+
+    private void checkPassword(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String password = request.getParameter("password");
+        String userid = request.getParameter("userid");
+        if(shopService.getPerson(userid).isCorrectPassword(password)){
+            request.setAttribute("right", "Correct Password");
+            showCheck(request,response);
+        }
+        else{
+            request.setAttribute("wrong", "Wrong password");
+            showCheck(request,response);
+        }
+    }
+
+    private void showCheck(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        session(request);
+        String userid = request.getParameter("userid");
+        request.setAttribute("userid", userid);
+        request.getRequestDispatcher("checkPassword.jsp").forward(request,response);
+    }
+
+    private void deleteProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        session(request);
+        shopService.deleteProduct(request.getParameter("itemid"));
+        showProductOverview(request,response);
+    }
+
+    private void deletePerson(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        session(request);
+        shopService.deletePerson(request.getParameter("userid"));
+        showOverview(request,response);
     }
 
     private void addProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -98,7 +157,7 @@ private ShopService shopService;
         if(errorsProduct.size() == 0){
             try{
                 shopService.addProduct(product);
-                showProductOverview(request,response);
+                response.sendRedirect("Servlet?command=successProduct&name="+product.getName());
             } catch(IllegalArgumentException exc){
                 request.setAttribute("errors", exc.getMessage());
                 request.getRequestDispatcher("addProduct.jsp").forward(request,response);
@@ -140,11 +199,10 @@ private ShopService shopService;
         if(errors.size() == 0){
             try{
                 shopService.add(person);
-                showOverview(request,response);
+                response.sendRedirect("Servlet?command=successSignUp&firstname="+person.getFirstName());
             } catch(IllegalArgumentException exc){
                 request.setAttribute("errors", exc.getMessage());
                 request.getRequestDispatcher("signUp.jsp").forward(request,response);
-
             }
         }
         else{

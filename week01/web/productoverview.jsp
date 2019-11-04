@@ -41,6 +41,7 @@
                     <td>${product.name}</td>
                     <td>${product.price}</td>
                     <td>${product.description}</td>
+                    <td><a href="Servlet?command=deleteProduct&itemid=${product.productId}">Delete</a></td>
                 </tr>
             </c:forEach>
 

@@ -41,6 +41,8 @@
                 <td>${person.email}</td>
                 <td>${person.firstName}</td>
                 <td>${person.lastName}</td>
+                <td><a href="Servlet?command=deletePerson&userid=${person.userid}">Delete</a></td>
+                <td><a href="Servlet?command=showCheck&userid=${person.userid}">Check Password</a></td>
             </tr>
             </c:forEach>
 

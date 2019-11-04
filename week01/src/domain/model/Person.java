@@ -62,6 +62,14 @@ public class Person {
 		crypt.update(password.getBytes("UTF-8"));
 		hashedPassword = new BigInteger(1, crypt.digest()).toString(16);
 	}
+
+	private String hashPassword(String password) throws NoSuchAlgorithmException, UnsupportedEncodingException{
+		MessageDigest crypt = MessageDigest.getInstance("SHA-512");
+		crypt.reset();
+
+		crypt.update(password.getBytes("UTF-8"));
+		return new BigInteger(1, crypt.digest()).toString(16);
+	}
 	
 	public String getEmail() {
 		return email;
@@ -79,7 +87,13 @@ public class Person {
 		if(password.isEmpty()){
 			throw new IllegalArgumentException("No password given");
 		}
-		return getPassword().equals(password);
+		Person person = new Person();
+		try {
+			return getPassword().equals(person.hashPassword(password));
+		} catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		return false;
 	}
 
 	public void setPassword(String password) {

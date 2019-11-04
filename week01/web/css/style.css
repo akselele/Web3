@@ -86,7 +86,7 @@ form {
     border: 1px solid #b94a48;
     color: #b94a48;
     border-radius: 3px;
-    width: 100%
+    width: 100%;
     margin-bottom: 1em;
     box-sizing: border-box;
 }
@@ -194,6 +194,24 @@ input {
     }
 	
 	
+}
+
+.alert-safety {
+	padding: 0.5em;
+	background-color: #03fc77;
+	border: 1px solid #03fc77;
+	color: black;
+	border-radius: 3px;
+	width: 100%;
+	margin-bottom: 1em;
+	box-sizing: border-box;
+}
+.alert-safety ul {
+	list-style-type: none;
+}
+
+.alert-safety {
+	width: 614px;
 }
 
 /*

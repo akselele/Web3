@@ -119,11 +119,11 @@ public class ProductDbInSQL implements ProductDb {
 
     @Override
     public void delete(String productid) {
-        String sql = "DELETE FROM \"HamelryckAxelWeb3\".person WHERE \"HamelryckAxelWeb3\".product.productid = ?";
+        String sql = "DELETE FROM \"HamelryckAxelWeb3\".product WHERE \"HamelryckAxelWeb3\".product.productid = ?";
         try(Connection connection = DriverManager.getConnection(url,properties);
             PreparedStatement statement = connection.prepareStatement(sql)){
             statement.setString(1, productid);
-            statement.execute(sql);
+            statement.executeUpdate();
         } catch (SQLException e) {
             throw new DbException(e.getMessage(),e);
         }

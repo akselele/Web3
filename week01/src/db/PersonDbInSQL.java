@@ -123,7 +123,7 @@ public class PersonDbInSQL implements PersonDb {
         try(Connection connection = DriverManager.getConnection(url,properties);
             PreparedStatement statement = connection.prepareStatement(sql)){
             statement.setString(1, personId);
-            statement.execute(sql);
+            statement.executeUpdate();
         } catch (SQLException e) {
             throw new DbException(e.getMessage(),e);
         }
