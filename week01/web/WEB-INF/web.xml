@@ -5,12 +5,12 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
            version="4.0">
 
-    <jsp-config>
-        <jsp-property-group>
-            <url-pattern>*.jsp</url-pattern>
-            <scripting-invalid>true</scripting-invalid>
-        </jsp-property-group>
-    </jsp-config>
+        <jsp-config>
+            <jsp-property-group>
+                <url-pattern>*.jsp</url-pattern>
+                <scripting-invalid>true</scripting-invalid>
+            </jsp-property-group>
+        </jsp-config>
 
     <!--<error-page>-->
         <!--<exception-type>java.lang.Throwable</exception-type>-->

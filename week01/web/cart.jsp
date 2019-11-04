@@ -1,13 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" %>
+         pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="UTF-8">
-    <title>Person Overview</title>
+    <title>Product Overview</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -17,36 +17,35 @@
         <nav>
             <ul>
                 <li><a href="Servlet?command=showHome">Home</a></li>
-                <li id="actual"><a href="Servlet?command=overview">People</a></li>
+                <li><a href="Servlet?command=overview">People</a></li>
                 <li><a href="Servlet?command=productoverview">Products</a></li>
                 <li><a href="Servlet?command=signUp">Sign up</a></li>
                 <li><a href="Servlet?command=showAddProduct">Add product</a></li>
-                <li><a href="Servlet?command=cart">Cart</a></li>
+                <li id="actual"><a href="Servlet?command=cart">Cart</a></li>
             </ul>
         </nav>
         <h2>
-            User Overview
+            Product Cart
         </h2>
 
     </header>
     <main>
         <table>
             <tr>
-                <th>E-mail</th>
-                <th>First Name</th>
-                <th>Last Name</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
             </tr>
-            <c:forEach var ="person" items="${persons}">
-            <tr>
-                <td>${person.email}</td>
-                <td>${person.firstName}</td>
-                <td>${person.lastName}</td>
-                <td><a href="Servlet?command=deletePerson&userid=${person.userid}">Delete</a></td>
-                <td><a href="Servlet?command=showCheck&userid=${person.userid}">Check Password</a></td>
-            </tr>
+            <c:forEach var ="product" items="${products}">
+                <tr>
+                    <td>${product.name}</td>
+                    <td>${product.price}</td>
+                    <td>${product.description}</td>
+                    <td><a href="Servlet?command=deleteProduct&itemid=${product.productId}" >Delete</a></td>
+                </tr>
             </c:forEach>
 
-            <caption>Users Overview</caption>
+            <caption>Products Overview</caption>
         </table>
     </main>
     <footer>
@@ -55,3 +54,4 @@
 </div>
 </body>
 </html>
+

@@ -6,14 +6,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Success product added</title>
+    <title>Successful delete</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
 <div id="container">
     <header>
         <h1>
-            <span>Success product added</span>
+            <span>Successful delete</span>
         </h1>
         <nav>
             <ul>
@@ -28,7 +28,7 @@
 
     </header>
     <main>
-        <p>${param.name} has successfully been added.</p>
+        <p>${param.name} has successfully been deleted.</p>
         <a href="Servlet?command=showHome">Return to home page</a>
     </main>
     <footer> Videos are not mine and are videos of the respecting players </footer>

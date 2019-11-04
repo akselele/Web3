@@ -17,10 +17,11 @@
         <nav>
             <ul>
                 <li><a href="Servlet?command=showHome">Home</a></li>
-                <li><a href="Servlet?command=overview">Overview</a></li>
+                <li><a href="Servlet?command=overview">People</a></li>
+                <li><a href="Servlet?command=productoverview">Products</a></li>
                 <li><a href="Servlet?command=signUp">Sign up</a></li>
                 <li><a href="Servlet?command=showAddProduct">Add product</a></li>
-                <li><a href="Servlet?command=history">See history</a></li>
+                <li><a href="Servlet?command=cart">Cart</a></li>
             </ul>
         </nav>
         <h2>

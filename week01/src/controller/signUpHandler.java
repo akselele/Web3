@@ -11,8 +11,6 @@ public class signUpHandler extends RequestHandler{
     public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestHandler handler = new cookieHandler();
         handler.handleRequest(request,response);
-        RequestHandler handler2 = new sessionHandler();
-        handler2.handleRequest(request,response);
         request.getRequestDispatcher("signUp.jsp").forward(request,response);
     }
 }

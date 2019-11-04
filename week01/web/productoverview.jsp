@@ -17,11 +17,11 @@
         <nav>
             <ul>
                 <li><a href="Servlet?command=showHome">Home</a></li>
-                <li><a href="Servlet?command=overview">Person Overview</a></li>
-                <li id="actual"><a href="Servlet?command=productoverview">Product Overview</a></li>
+                <li><a href="Servlet?command=overview">People</a></li>
+                <li id="actual"><a href="Servlet?command=productoverview">Products</a></li>
                 <li><a href="Servlet?command=signUp">Sign up</a></li>
                 <li><a href="Servlet?command=showAddProduct">Add product</a></li>
-                <li><a href="Servlet?command=history">See history</a></li>
+                <li><a href="Servlet?command=cart">Cart</a></li>
             </ul>
         </nav>
         <h2>
@@ -41,7 +41,8 @@
                     <td>${product.name}</td>
                     <td>${product.price}</td>
                     <td>${product.description}</td>
-                    <td><a href="Servlet?command=deleteProduct&itemid=${product.productId}">Delete</a></td>
+                    <td><a href="Servlet?command=addCart&itemid=${product.productId}" onclick="javascript:alert('${product.name} added to cart');return true;">Add to cart</a></td>
+                    <td><a href="Servlet?command=deleteProduct&itemid=${product.productId}" >Delete</a></td>
                 </tr>
             </c:forEach>
 
@@ -52,5 +53,14 @@
         &copy; Webontwikkeling 3, UC Leuven-Limburg
     </footer>
 </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js">
+    $(function () {
+        $('#modal').click(function () {
+            alert('Added to cart');
+            return false;
+        });
+    });
+</script>
 </body>
 </html>
+

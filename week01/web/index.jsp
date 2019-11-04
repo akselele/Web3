@@ -17,12 +17,12 @@
 			</h1>
 			<nav>
 				<ul>
-					<li id="actual"><a href="Servlet?command=showHome">Home</a></li>
-					<li><a href="Servlet?command=overview">Person Overview</a></li>
-					<li><a href="Servlet?command=productoverview">Product Overview</a></li>
+					<li id ="actual"><a href="Servlet?command=showHome">Home</a></li>
+					<li><a href="Servlet?command=overview">People</a></li>
+					<li><a href="Servlet?command=productoverview">Products</a></li>
 					<li><a href="Servlet?command=signUp">Sign up</a></li>
 					<li><a href="Servlet?command=showAddProduct">Add product</a></li>
-					<li><a href="Servlet?command=history">See history</a></li>
+					<li><a href="Servlet?command=cart">Cart</a></li>
 				</ul>
 			</nav>
 			<h2>Home</h2>

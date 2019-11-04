@@ -45,12 +45,8 @@ public class Servlet extends HttpServlet {
         processRequest(request, response);
     }
 
-
-    //TODO
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestHandler handler = factory.getHandler(request,response,service);
-        handler.setService(service);
-        handler.handleRequest(request,response);
+        factory.getHandler(request,response,service).handleRequest(request,response);
 
 //        RequestHandler handler = factory.getHandler(request,response,service);
 //
