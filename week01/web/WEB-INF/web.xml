@@ -23,7 +23,7 @@
     <!--</error-page>-->
 
     <welcome-file-list>
-        <welcome-file>Servlet</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
     <context-param>

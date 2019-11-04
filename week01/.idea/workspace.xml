@@ -7,19 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e472c11-85d5-4a54-8dde-a1781946e59e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/checkPassword.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/successPages/productSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/successPages/signUpSuccess.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/ControllerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/RequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/addPersonHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/addProductHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/checkPasswordHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/cookieHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/deletePersonHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/deleteProductHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/hidePictureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/historyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/overviewHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/productoverviewHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/sessionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/showAddProductHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/showCheckHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/showHomeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/showPictureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/signUpHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/successProductHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/successSignUpHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ExamenWeb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExamenWeb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/PersonDbInSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/PersonDbInSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/ProductDbInSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/ProductDbInSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/activity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/activity.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/addProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/checkPassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/checkPassword.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/error404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/error404.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/personoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/personoverview.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/productoverview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/productoverview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signUp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/successPages/productSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/successPages/productSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/successPages/signUpSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/successPages/signUpSuccess.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,17 +52,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/Servlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
+            <state relative-caret-position="280">
+              <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
               <folding>
-                <element signature="method#showCheck#0;class#Servlet#0" />
-                <element signature="method#deleteProduct#0;class#Servlet#0" />
-                <element signature="method#setProductID#0;class#Servlet#0" />
-                <element signature="method#showAddProduct#0;class#Servlet#0" />
-                <element signature="method#showProductOverview#0;class#Servlet#0" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/ControllerFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="13" column="84" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="84" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,8 +79,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/successPages/productSuccess.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            <state relative-caret-position="648">
+              <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/overviewHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/sessionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,60 +112,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/successPages/signUpSuccess.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+            <state relative-caret-position="142">
+              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/checkPassword.jsp">
+        <entry file="file://$PROJECT_DIR$/src/controller/productoverviewHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/domain/model/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/personoverview.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="44" column="59" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db/ProductDbInSQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="128" column="9" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#ProductDbInSQL#0;class#ProductDbInSQL#0" />
-                <element signature="method#getAll#0;class#ProductDbInSQL#0" />
-                <element signature="method#get#0;class#ProductDbInSQL#0" />
-                <element signature="method#add#0;class#ProductDbInSQL#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db/PersonDbInSQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="122" column="80" selection-start-line="122" selection-start-column="80" selection-end-line="122" selection-end-column="80" />
+            <state relative-caret-position="299">
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,10 +131,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/signUp.jsp">
+        <entry file="file://$PROJECT_DIR$/src/controller/deleteProductHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="49" column="28" selection-end-line="64" />
+            <state relative-caret-position="322">
+              <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,9 +147,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -150,6 +165,7 @@
       <find>setpass</find>
       <find>addpers</find>
       <find>safet</find>
+      <find>setproductid</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,31 +174,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/view/SeleniumWorksWellTest.java" />
-        <option value="$PROJECT_DIR$/test/view/RegisterTest.java" />
-        <option value="$PROJECT_DIR$/src/ui/view/DB.java" />
         <option value="$PROJECT_DIR$/src/db/PersonDbInMemory.java" />
         <option value="$PROJECT_DIR$/src/db/ProductDb.java" />
         <option value="$PROJECT_DIR$/src/domain/model/ShopService.java" />
+        <option value="$PROJECT_DIR$/src/domain/model/Product.java" />
+        <option value="$PROJECT_DIR$/src/db/PersonDbInSQL.java" />
+        <option value="$PROJECT_DIR$/src/db/ProductDbInSQL.java" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/signUpSuccess.jsp" />
+        <option value="$PROJECT_DIR$/src/domain/model/Person.java" />
+        <option value="$PROJECT_DIR$/src/controller/HomeHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/OverviewProductHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/HistoryHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/OverviewPersonHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/showCheckPasswordHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/AddProductHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/AddPersonHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/RequestHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/addPersonHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/addProductHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/checkPasswordHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/cookieHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/deletePersonHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/hidePictureHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/historyHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/showAddProductHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/showCheckHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/showHomeHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/showOverviewHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/showProductOverviewHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/showSignUpHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/successProductHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/successSignUpHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/controller/showPictureHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/ControllerFactory.java" />
+        <option value="$PROJECT_DIR$/../../../Servlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/activity.jsp" />
+        <option value="$PROJECT_DIR$/web/addProduct.jsp" />
+        <option value="$PROJECT_DIR$/web/checkPassword.jsp" />
         <option value="$PROJECT_DIR$/web/error.jsp" />
         <option value="$PROJECT_DIR$/web/error404.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/signUp.jsp" />
-        <option value="$PROJECT_DIR$/src/domain/model/Product.java" />
-        <option value="$PROJECT_DIR$/web/addProduct.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/db/PersonDbInSQL.java" />
-        <option value="$PROJECT_DIR$/web/productoverview.jsp" />
-        <option value="$PROJECT_DIR$/src/db/ProductDbInSQL.java" />
         <option value="$PROJECT_DIR$/web/personoverview.jsp" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
-        <option value="$PROJECT_DIR$/web/checkPassword.jsp" />
-        <option value="$PROJECT_DIR$/web/signUpSuccess.jsp" />
-        <option value="$PROJECT_DIR$/web/successPages/productSuccess.jsp" />
+        <option value="$PROJECT_DIR$/web/productoverview.jsp" />
+        <option value="$PROJECT_DIR$/web/signUp.jsp" />
+        <option value="$PROJECT_DIR$/src/controller/deleteProductHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/sessionHandler.java" />
         <option value="$PROJECT_DIR$/web/successPages/signUpSuccess.jsp" />
+        <option value="$PROJECT_DIR$/web/successPages/productSuccess.jsp" />
         <option value="$PROJECT_DIR$/src/controller/Servlet.java" />
-        <option value="$PROJECT_DIR$/src/domain/model/Person.java" />
       </list>
     </option>
   </component>
@@ -238,38 +280,6 @@
             <path>
               <item name="week01" type="b2602c69:ProjectViewProjectNode" />
               <item name="week01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="week01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="week01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="week01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="week01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="week01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week01" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -278,12 +288,18 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="successPages" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="week01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="week01" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,8 +310,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572867831621" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../GuessYourElo/GuessYourElo" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572883527297" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../week06_frontcontrollercontinued_solution-master" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -309,15 +326,15 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\axlut\Desktop\TI3\Web3\week01\web" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\axlut\Desktop\TI3\Web3\week01\src\controller" />
       <recent name="C:\Users\axlut\Desktop\TI3\Web3\week01\web\successPages" />
       <recent name="C:\Users\axlut\Desktop\TI3\Web3\week01\web" />
       <recent name="C:\Users\Axel\Desktop\TI3\Web3\week01\web" />
       <recent name="C:\Users\Axel\Desktop\TI3\Web3\week01\test" />
-      <recent name="C:\Users\Axel\Desktop\TI3\Web3\week01\src\domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\axlut\Desktop\TI3\Web3\week01\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -524,7 +541,8 @@
       <workItem from="1571041703953" duration="4758000" />
       <workItem from="1571648991508" duration="4043000" />
       <workItem from="1571809926641" duration="2820000" />
-      <workItem from="1572859708572" duration="5655000" />
+      <workItem from="1572859708572" duration="5748000" />
+      <workItem from="1572874521803" duration="8137000" />
     </task>
     <task id="LOCAL-00001" summary="alles">
       <created>1569784873171</created>
@@ -582,7 +600,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571812738858</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Labo 6 deel van PRG af + authorisation van labo 5 af">
+      <created>1572867901069</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572867901069</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -618,13 +643,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33058000" />
+    <option name="totallyTimeSpent" value="41288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2865772" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29060403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -632,9 +657,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Duplicate detector" weight="0.32941177" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -736,43 +762,10 @@
     <MESSAGE value="Labo 3 buiten error pagina(zonder de pagina's)" />
     <MESSAGE value="Labo 3 &amp; 4 af, producten bijna geimplementeerd, alleen nog maar de addproduct form toevoegen." />
     <MESSAGE value="Labo 5 helemaal af (product ook helemaal af in DB)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Labo 5 helemaal af (product ook helemaal af in DB)" />
+    <MESSAGE value="Labo 6 deel van PRG af + authorisation van labo 5 af" />
+    <option name="LAST_COMMIT_MESSAGE" value="Labo 6 deel van PRG af + authorisation van labo 5 af" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/view/SeleniumWorksWellTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/DomainException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/PersonDbInMemory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../week03_jdbc_configuration_solution-master/src/domain/db/DbException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../week03_jdbc_configuration_solution-master/src/domain/db/CountryDBSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../week04_XSS_solution-master/web/loginwithoutxss.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-232" />
@@ -825,34 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/activity.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="22" column="59" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/error404.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/view/RegisterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="596">
@@ -867,20 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/addProduct.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="49" column="72" selection-start-line="49" selection-start-column="72" selection-end-line="49" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/model/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -892,69 +843,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/ProductDbInSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="128" column="9" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ProductDbInSQL#0;class#ProductDbInSQL#0" />
-            <element signature="method#getAll#0;class#ProductDbInSQL#0" />
-            <element signature="method#get#0;class#ProductDbInSQL#0" />
-            <element signature="method#add#0;class#ProductDbInSQL#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/productoverview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/signUp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="49" column="28" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/PersonDbInSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="122" column="80" selection-start-line="122" selection-start-column="80" selection-end-line="122" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/personoverview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="44" column="59" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2580">
           <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/successPages/productSuccess.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/successPages/signUpSuccess.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -968,23 +860,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/checkPassword.jsp">
+    <entry file="file://$PROJECT_DIR$/src/db/ProductDbInSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+        <state relative-caret-position="1288">
+          <caret line="128" column="9" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ProductDbInSQL#0;class#ProductDbInSQL#0" />
+            <element signature="method#getAll#0;class#ProductDbInSQL#0" />
+            <element signature="method#get#0;class#ProductDbInSQL#0" />
+            <element signature="method#add#0;class#ProductDbInSQL#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Servlet.java">
+    <entry file="file://$PROJECT_DIR$/src/db/PersonDbInSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
+        <state relative-caret-position="2691">
+          <caret line="122" column="80" selection-start-line="122" selection-start-column="80" selection-end-line="122" selection-end-column="80" />
           <folding>
-            <element signature="method#showCheck#0;class#Servlet#0" />
-            <element signature="method#deleteProduct#0;class#Servlet#0" />
-            <element signature="method#setProductID#0;class#Servlet#0" />
-            <element signature="method#showAddProduct#0;class#Servlet#0" />
-            <element signature="method#showProductOverview#0;class#Servlet#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -993,6 +888,324 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/addPersonHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/addProductHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/checkPasswordHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/cookieHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/deletePersonHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/hidePictureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="76" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/historyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/showAddProductHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/showCheckHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/showHomeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/signUpHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/successProductHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="99" selection-start-line="12" selection-start-column="99" selection-end-line="12" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/successSignUpHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3795">
+          <caret line="181" column="24" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="23" column="4" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/showPictureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/RequestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="97" column="22" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/activity.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/addProduct.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/checkPassword.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/error404.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/personoverview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/productoverview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/signUp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/productoverviewHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/deleteProductHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/sessionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/successPages/signUpSuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/overviewHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ControllerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="13" column="84" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/successPages/productSuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

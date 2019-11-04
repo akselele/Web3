@@ -29,7 +29,7 @@
     </header>
     <main>
         <p>${param.name} has successfully been added.</p>
-        <a href="Servlet">Return to home page</a>
+        <a href="Servlet?command=showHome">Return to home page</a>
     </main>
     <footer> Videos are not mine and are videos of the respecting players </footer>
 </div>

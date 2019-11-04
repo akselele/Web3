@@ -29,7 +29,7 @@
     </header>
     <main>
         <p>Your account has successfully been created, ${param.firstname}.</p>
-        <a href="Servlet">Return to home page</a>
+        <a href="Servlet?command=showHome">Return to home page</a>
     </main>
     <footer> Videos are not mine and are videos of the respecting players </footer>
 </div>
