@@ -1,6 +1,7 @@
 package db;
 
 import domain.model.Person;
+import domain.model.Role;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -34,7 +35,8 @@ public class PersonDbInSQL implements PersonDb {
                 String lastName = result.getString("lastName");
                 String email = result.getString("email");
                 String password = result.getString("password");
-                Person person = new Person(userid, email, password, firstName,lastName);
+                Role role = Role.valueOf(result.getString("role"));
+                Person person = new Person(userid, email, password, firstName,lastName, role);
                 people.add(person);
                 System.out.println(person.toString());
             }
@@ -58,8 +60,9 @@ public class PersonDbInSQL implements PersonDb {
                 String lastName = result.getString("lastName");
                 String email = result.getString("email");
                 String password = result.getString("password");
+                Role role = Role.valueOf(result.getString("role"));
                 try {	// validation of data stored in database
-                    person = new Person(userid, email, password, firstName,lastName);
+                    person = new Person(userid, email, password, firstName,lastName, role);
                     System.out.println(person.toString());
                 }
                 catch (IllegalArgumentException e) {
@@ -77,8 +80,8 @@ public class PersonDbInSQL implements PersonDb {
         if(person == null){
             throw new DbException("Nothing to add");
         }
-        String sql = "INSERT INTO \"HamelryckAxelWeb3\".person (userid, \"lastName\", \"firstName\", email, password) " +
-                "VALUES (?, ? , ? , ? , ?)";
+        String sql = "INSERT INTO \"HamelryckAxelWeb3\".person (userid, \"lastName\", \"firstName\", email, password, role) " +
+                "VALUES (?, ? , ? , ? , ?, ?)";
         try(Connection connection = DriverManager.getConnection(url, properties);
         PreparedStatement statement= connection.prepareStatement(sql)){
             statement.setString(1, person.getUserid());
@@ -86,6 +89,7 @@ public class PersonDbInSQL implements PersonDb {
             statement.setString(3, person.getFirstName());
             statement.setString(4, person.getEmail());
             statement.setString(5, person.getHashedPassword());
+            statement.setString(6,"CUSTOMER");
             statement.execute();
         }
         catch(SQLException e){

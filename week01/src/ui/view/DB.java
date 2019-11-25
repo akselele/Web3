@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.Properties;
 
 import domain.model.Person;
+import domain.model.Role;
 
 import javax.swing.*;
 
@@ -41,8 +42,9 @@ public class DB {
             String lastName = result.getString("lastName");
             String email = result.getString("email");
             String password = result.getString("password");
+            Role role = Role.valueOf(result.getString("role"));
             try {	// validation of data stored in database
-                Person person = new Person(userid, email, password, firstName,lastName);
+                Person person = new Person(userid, email, password, firstName,lastName, role);
                 System.out.println(person.toString());
             }
             catch (IllegalArgumentException e) {

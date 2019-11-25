@@ -2,6 +2,7 @@ package controller;
 
 import domain.model.Person;
 import domain.model.Product;
+import domain.model.Role;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -27,7 +28,7 @@ public class logInHandler extends RequestHandler {
             Person person = service.getUserIfAuthenticated(userid, password);
             request.getSession().setAttribute("person", person);
             response.sendRedirect("Servlet?command=showHome&text="+person.getFirstName());
-        }catch(NullPointerException e){
+        }catch(NullPointerException | IllegalArgumentException e){
             request.setAttribute("error", "Username or password was incorrect, please try again.");
             request.getRequestDispatcher("login.jsp").forward(request,response);
         }

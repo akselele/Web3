@@ -46,7 +46,14 @@ public class Servlet extends HttpServlet {
     }
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        factory.getHandler(request,response,service).handleRequest(request,response);
+        try {
+            factory.getHandler(request, response, service).handleRequest(request, response);
+            }
+        catch (NotAuthorizedException e){
+            request.setAttribute("notAuthorized","You have insufficient rights to have a look at the requested page.");
+            RequestHandler handler = new showHomeHandler();
+            handler.handleRequest(request,response);
+        }
     }
 
 }

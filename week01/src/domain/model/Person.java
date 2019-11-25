@@ -15,13 +15,15 @@ public class Person {
 	private String firstName;
 	private String lastName;
 	private String hashedPassword;
+	private Role role;
 
-	public Person(String userid, String email, String password, String firstName, String lastName) {
+	public Person(String userid, String email, String password, String firstName, String lastName, Role role) {
 		setUserid(userid);
 		setEmail(email);
 		setPassword(password);
 		setFirstName(firstName);
 		setLastName(lastName);
+		setRole(role);
 	}
 	
 	public Person() {
@@ -128,5 +130,13 @@ public class Person {
 	@Override
 	public String toString(){
 		return getFirstName() + " " + getLastName() + ": " + getUserid() + ", " + getEmail();
-	}	
+	}
+
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role){
+		this.role = role;
+	}
 }
