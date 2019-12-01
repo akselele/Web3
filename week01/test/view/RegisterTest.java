@@ -22,7 +22,7 @@ public class RegisterTest {
 		//System.setProperty("webdriver.chrome.driver", "/Users/.../web3pers/chromedriver");
 			// windows: gebruik dubbele \\ om pad aan te geven
 			// hint: zoek een werkende test op van web 2 ...
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\axlut\\Desktop\\TI3\\Web3\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Axel\\Desktop\\TI3\\Web3GIT\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(path+"?command=signUp");
 	}

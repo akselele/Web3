@@ -17,7 +17,9 @@
         <nav>
             <ul>
                 <li><a href="Servlet?command=showHome">Home</a></li>
-                <li><a href="Servlet?command=overview">People</a></li>
+                <c:if test="${person.role=='ADMIN'}">
+                    <li><a href="Servlet?command=overview">People</a></li>
+                </c:if>
                 <li id="actual"><a href="Servlet?command=productoverview">Products</a></li>
                 <c:if test =" ${empty person}">
                     <li><a href="Servlet?command=signUp">Sign up</a></li>
@@ -46,7 +48,9 @@
                     <td>${product.price}</td>
                     <td>${product.description}</td>
                     <td><a href="Servlet?command=addCart&itemid=${product.productId}" onclick="javascript:alert('${product.name} added to cart');return true;">Add to cart</a></td>
+                    <c:if test="${person.role=='ADMIN'}">
                     <td><a href="Servlet?command=deleteProduct&itemid=${product.productId}" >Delete</a></td>
+                    </c:if>
                 </tr>
             </c:forEach>
 

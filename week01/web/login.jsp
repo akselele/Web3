@@ -18,7 +18,9 @@
         <nav>
             <ul>
                 <li><a href="Servlet?command=showHome">Home</a></li>
-                <li><a href="Servlet?command=overview">People</a></li>
+                <c:if test="${person.role=='ADMIN'}">
+                    <li><a href="Servlet?command=overview">People</a></li>
+                </c:if>
                 <li><a href="Servlet?command=productoverview">Products</a></li>
                 <c:if test =" ${empty person}">
                     <li><a href="Servlet?command=signUp">Sign up</a></li>
