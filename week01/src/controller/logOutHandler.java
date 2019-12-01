@@ -17,5 +17,6 @@ public class logOutHandler extends RequestHandler {
         request.getSession().invalidate();
         RequestHandler handler = new showHomeHandler();
         handler.handleRequest(request,response);
+        return;
     }
 }
