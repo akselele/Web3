@@ -19,7 +19,7 @@
                 <li><a href="Servlet?command=showHome">Home</a></li>
                 <li id="actual"><a href="Servlet?command=overview">People</a></li>
                 <li><a href="Servlet?command=productoverview">Products</a></li>
-                <c:if test =" ${empty person}">
+                <c:if test ="${empty person}">
                     <li><a href="Servlet?command=signUp">Sign up</a></li>
                 </c:if>
                 <c:if test="${person.role=='ADMIN'}">

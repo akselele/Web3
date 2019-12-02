@@ -14,9 +14,9 @@ public class logOutHandler extends RequestHandler {
 
     @Override
     public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getSession().setAttribute("person",null);
         request.getSession().invalidate();
         RequestHandler handler = new showHomeHandler();
         handler.handleRequest(request,response);
-        return;
     }
 }
