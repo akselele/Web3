@@ -1,0 +1,1 @@
+checkRoles class toevoegen voor niet authorized exception.
